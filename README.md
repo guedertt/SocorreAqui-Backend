@@ -32,7 +32,7 @@ Abra o MySQL Workbench e execute o arquivo banco.sql.
 
 Inicie o servidor:
 
-bash
+
 Copiar código
 npm run dev
 O servidor estará disponível em: http://localhost:3000
@@ -53,3 +53,4 @@ A API é pública, não exige login.
 Favoritos ficam no celular do usuário e não são salvos no banco.
 
 Código organizado em MVC para facilitar manutenção.
+
