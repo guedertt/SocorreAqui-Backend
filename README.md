@@ -20,8 +20,6 @@ Back-end do aplicativo SocorreAqui, que fornece números de emergência via API.
 npm install
 Crie o arquivo .env na raiz do projeto com o seguinte conteúdo:
 
-env
-Copiar código
 DB_HOST=localhost
 DB_USER=root
 DB_PASS=SUA_SENHA_DO_MYSQL
@@ -53,4 +51,5 @@ A API é pública, não exige login.
 Favoritos ficam no celular do usuário e não são salvos no banco.
 
 Código organizado em MVC para facilitar manutenção.
+
 
