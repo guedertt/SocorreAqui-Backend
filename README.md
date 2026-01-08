@@ -1,55 +1,71 @@
- SocorreAqui - Back-end
+Perfeito! Aqui está um **README pronto e profissional** só para o **backend do SocorreAqui**:
 
-Back-end do aplicativo SocorreAqui, que fornece números de emergência via API.
+````markdown
+# SocorreAqui – Backend 🚨
 
----
+Este repositório contém o **backend** do projeto **SocorreAqui**, responsável por gerenciar contatos de emergência e personalizados, fornecendo dados para o site e o aplicativo mobile via API REST.
 
- Pré-requisitos
+## Funcionalidades
 
-- Node.js instalado
-- MySQL Community Server instalado e rodando
-- Editor de código (recomendado: VSCode)
+- CRUD de contatos de emergência pré-definidos e personalizados (criar, ler, atualizar, deletar).  
+- Integração com site e app mobile através de **API REST**.  
+- Persistência de dados segura em arquivo local ou banco de dados (JSON).  
+- Modularidade e organização do código para facilitar manutenção e evolução do projeto.
 
----
+## Tecnologias
 
- Rodando o projeto
+- **Node.js**  
+- **Express**  
+- **JSON** (para armazenamento de dados)  
+- **Git** (controle de versão)
 
-1. Instale as dependências:
+## Estrutura do Projeto
 
+- `index.js` – ponto de entrada do servidor Express.  
+- `model/` – manipulação dos dados (CRUD).  
+- `control/` – lógica das rotas e tratamento de requisições.  
+- `roteamento/` – definição das rotas da API.
 
-npm install
-Crie o arquivo .env na raiz do projeto com o seguinte conteúdo:
+## Como Rodar
 
-DB_HOST=localhost
-DB_USER=root
-DB_PASS=SUA_SENHA_DO_MYSQL
-DB_NAME=socorreaqui
-PORT=3000
-Crie o banco de dados e tabelas
-Abra o MySQL Workbench e execute o arquivo banco.sql.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/guedertt/SocorreAqui-Backend.git
+````
 
-Inicie o servidor:
+2. Instale as dependências:
 
+   ```bash
+   npm install
+   ```
+3. Inicie o servidor:
 
-Copiar código
-npm run dev
-O servidor estará disponível em: http://localhost:3000
+   ```bash
+   node index.js
+   ```
+4. A API estará disponível em `http://localhost:8000` (ou porta configurada).
 
-Testando a API
-Rota raiz: GET /
-Retorna mensagem de status da API.
+## Rotas Principais
 
-Todos os contatos: GET /contatos
-Retorna a lista de contatos de emergência.
+* `GET /contatos` – lista todos os contatos de emergência.
+* `GET /contatos/:id` – obtém um contato específico pelo ID.
+* `POST /contatos` – adiciona um contato personalizado.
+* `PUT /contatos/:id` – atualiza um contato existente.
+* `DELETE /contatos/:id` – remove um contato personalizado.
 
-Contato específico: GET /contatos/:id
-Retorna o contato correspondente ao ID.
+## Possíveis Melhorias
 
-Observações
-A API é pública, não exige login.
+* Implementar autenticação para proteger dados de contatos personalizados.
+* Migrar armazenamento para banco de dados (MySQL, MongoDB ou SQLite).
+* Adicionar logs de acesso e auditoria.
+* Criar testes automatizados para garantir estabilidade do backend.
 
-Favoritos ficam no celular do usuário e não são salvos no banco.
+## Autor
 
-Código organizado em MVC para facilitar manutenção.
+**Guilherme Guedert**
+GitHub: [https://github.com/guedertt/SocorreAqui-Backend](https://github.com/guedertt/SocorreAqui-Backend)
 
+```
 
+Se você quiser, posso **fazer também a versão LinkedIn-ready** destacando backend e mostrando como ele se conecta ao site e ao mobile. Quer que eu faça?
+```
